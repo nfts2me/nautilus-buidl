@@ -1,0 +1,764 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IN2M_ERCLibrary",
+  "sourceName": "contracts/interfaces/IN2M_ERCLibrary.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "filtered",
+          "type": "address"
+        }
+      ],
+      "name": "AddressFiltered",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CantLowerCurrentPercentages",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CantRevealYetWaitABitToBeAbleToRedeem",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CantSetBaseURIAndPlaceholderAtTheSameTime",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CollectionSoldOut",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ContractMetadataURIAlreadyFixed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InputSizeMismatch",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidAmount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidDropDate",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidInputSizesDontMatch",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidMintFee",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidMintFeeForFreeMinting",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidMintingType",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidPercentageOrDiscountValues",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidPhaseWithoutDate",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidRevenuePercentage",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidTokenId",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MaxPerAddressExceeded",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MetadataAlreadyFixed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NewBaseURICantBeEmpty",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NewPlaceholderCantBeEmpty",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoBaseURINorPlaceholderSet",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NonTransferrableSoulboundNFT",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotEnoughAmountToMint",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NothingToRedeem",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyAffiliateOrN2M",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyOwnerOrN2M",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PresaleInvalidMintingType",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PresaleNotOpen",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PublicSaleNotOpen",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ReentrancyGuard",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RoyaltyFeeTooHigh",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SaleFinished",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SignatureExpired",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SignatureMismatch",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TokenAlreadyMinted",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TotalSupplyMustBeGreaterThanZero",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "WaitUntilDropDate",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "affiliate",
+          "type": "address"
+        }
+      ],
+      "name": "AffiliateSell",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "affiliate",
+          "type": "address"
+        }
+      ],
+      "name": "affiliateWithdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "affiliate",
+          "type": "address"
+        }
+      ],
+      "name": "affiliatesInfo",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "enabled",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint16",
+          "name": "affiliatePercentage",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "userDiscount",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "newMintPrice",
+          "type": "uint256"
+        }
+      ],
+      "name": "changeMintPrice",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "newPlaceholderImageCIDHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "changePlaceholderImageCID",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "collectionSize",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "contractURI",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "currentPhase",
+      "outputs": [
+        {
+          "internalType": "enum IN2M_ERCStorage.SalePhase",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "disableOperatorFilterRegistry",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "enableOperatorFilterRegistry",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "erc20PaymentAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "resolver",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "collectionENSName",
+          "type": "string"
+        }
+      ],
+      "name": "initializeAndSetReverseENSName",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isMetadataFixed",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isOpen",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isOperatorFilterRegistryEnabled",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "mintingType",
+      "outputs": [
+        {
+          "internalType": "enum IN2M_ERCStorage.MintingType",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "n2mVersion",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ownerMaxRevenue",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "affiliate",
+          "type": "address"
+        }
+      ],
+      "name": "pendingAffiliateBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "pendingTotalAffiliatesBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "affiliate",
+          "type": "address"
+        }
+      ],
+      "name": "randomTickets",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "blockNumberToReveal",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "royaltyFee",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "saleDates",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "dropDateTimestamp",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "endDateTimestamp",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "userDiscount",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "affiliatePercentage",
+          "type": "uint16"
+        },
+        {
+          "internalType": "address",
+          "name": "affiliateAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setAffiliatesPercentageAndDiscount",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "baseURICIDHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "setAndRevealBaseURI",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "newContractURIMetadataCIDHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "setContractURI",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "dropDateTimestamp",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "endDateTimestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "setDropAndEndDate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "dropDateTimestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "setDropDate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "newMaxPerAddress",
+          "type": "uint16"
+        }
+      ],
+      "name": "setMaxPerAddress",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum IN2M_ERCStorage.SalePhase",
+          "name": "newPhase",
+          "type": "uint8"
+        }
+      ],
+      "name": "setPhase",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "rerverseResolver",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "collectionENSName",
+          "type": "string"
+        }
+      ],
+      "name": "setReverseENSName",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "erc20Address",
+          "type": "address"
+        }
+      ],
+      "name": "withdrawERC20",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "signatureExpireDate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "n2mFee",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "erc20Address",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signature",
+          "type": "bytes"
+        }
+      ],
+      "name": "withdrawERC20Pro",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "signatureExpireDate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "n2mFee",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signature",
+          "type": "bytes"
+        }
+      ],
+      "name": "withdrawPro",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "withdrawnAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "erc20",
+          "type": "address"
+        }
+      ],
+      "name": "withdrawnERC20Amount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

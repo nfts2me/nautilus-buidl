@@ -1,0 +1,37 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "N2MUpgradeable",
+  "sourceName": "contracts/beacon/N2MUpgradeable.sol",
+  "abi": [
+    {
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "inputs": [],
+      "name": "n2mVersions",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "implementationVersion",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "beaconVersion",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

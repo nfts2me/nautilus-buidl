@@ -1,0 +1,246 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IN2M_ERCStorage",
+  "sourceName": "contracts/interfaces/IN2M_ERCStorage.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "filtered",
+          "type": "address"
+        }
+      ],
+      "name": "AddressFiltered",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CantLowerCurrentPercentages",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CantRevealYetWaitABitToBeAbleToRedeem",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CantSetBaseURIAndPlaceholderAtTheSameTime",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CollectionSoldOut",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ContractMetadataURIAlreadyFixed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InputSizeMismatch",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidAmount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidDropDate",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidInputSizesDontMatch",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidMintFee",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidMintFeeForFreeMinting",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidMintingType",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidPercentageOrDiscountValues",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidPhaseWithoutDate",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidRevenuePercentage",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidTokenId",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MaxPerAddressExceeded",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MetadataAlreadyFixed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NewBaseURICantBeEmpty",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NewPlaceholderCantBeEmpty",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoBaseURINorPlaceholderSet",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NonTransferrableSoulboundNFT",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotEnoughAmountToMint",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NothingToRedeem",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyAffiliateOrN2M",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyOwnerOrN2M",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PresaleInvalidMintingType",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PresaleNotOpen",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PublicSaleNotOpen",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ReentrancyGuard",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RoyaltyFeeTooHigh",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SaleFinished",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SignatureExpired",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SignatureMismatch",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TokenAlreadyMinted",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TotalSupplyMustBeGreaterThanZero",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "WaitUntilDropDate",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "affiliate",
+          "type": "address"
+        }
+      ],
+      "name": "AffiliateSell",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "isMetadataFixed",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "n2mVersion",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
