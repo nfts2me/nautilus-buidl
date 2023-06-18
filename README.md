@@ -7,6 +7,9 @@ Our goal is to make the process of creating, deploying, and managing your NFT co
 
 **[NFTs2Me](https://nfts2me.com/)** is a user-friendly comprehensive platform to create, deploy and manage your NFT collection and community, **100% free** with advanced functionalities. It embraces the three big pillars of the NFT life cycle: creation, deployment, and administration of the contract and the community, empowering NFT creators.
 
+![image](https://github.com/nfts2me/nautilus-nfts2me/assets/109629895/9f13b574-25fc-4f81-bae2-b866778600d1)
+
+
 The **creation** pillar allows users to create their own NFTs artwork using a simple and user-friendly interface. Users can upload their own artwork or other digital assets or use our builtin generative art tool, and we'll guide them through the process of creating the metadata, defining its rarity, and uploading the collection to IPFS (a decentralized immutable file system) for free.
 
 The **deployment** pillar allows users to create and deploy the NFT contract on the blockchain, making them immutable, verified and accessible to the public. Our optimized system offers ultra low contract deployment fees while keeping advanced functionalities, like different minting types, minting the NFTs on any ERC-20 (like peggy BTC, USDT, DAI, ETH or any created ERC-20) or native coin (TZBC), Soulbound tokens, on chain affiliation... Furthermore, we offer the possibility to use our upgradeable contracts to benefit from new upcoming features. When deploying a collection you'll receive an NFT that represents its ownership.
@@ -36,6 +39,9 @@ Three types are available to make it easier for users to deploy an NFT project:
  - **Editions (1 artwork – multiple NFTs)**: The easiest way to get started. With Editions, you can create an NFT collection where all NFTs share the same artwork. If you don’t have artwork yet, you can even use Artificial Intelligence to create it.
  - **Drops (n artworks – n NFTs)**: If you already have specific images for each NFT, Drops allows you to assign different images to each NFT.
  - **Generative Art (combination of artworks)**: This is the advanced mode. Using the Generative Art editor, you can combine image layers (even using PSD files) to generate thousands of unique NFTs.
+
+![image](https://github.com/nfts2me/nautilus-nfts2me/assets/109629895/8f4d837b-6600-4386-bdf3-7352e7b0d567)
+
 
 ### Artificial Intelligence to create NFTs
 
@@ -87,6 +93,9 @@ Using our tools you'll be able to natively let your users (owner of NFTs from yo
 ### Custom minting pages with free subdomain
 
 Set up a **custom mint page** with your own subdomain to mint your NFTs or embed it in your website easily using our widget. You'll be able to set your own **custom subdomain** hosted by us or use you own website/domain.
+
+![minting page](https://github.com/nfts2me/nautilus-nfts2me/assets/109629895/04d48b70-f16b-4a9a-bc01-3c1b0070e9bc)
+
 
 ### And much more!
 
