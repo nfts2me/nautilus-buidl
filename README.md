@@ -18,8 +18,8 @@ The **administration** pillar focuses on the management of collection including 
 
 ## Demo Video
 
-[![Youtube](https://github.com/nfts2me/nautilus-nfts2me/assets/472079/0471591a-2266-4b16-80f2-37f7af0f40fc)](https://www.youtube.com/watch?v=XXXXXXXXXXXXXXXXXXXX "Demo Video")
-[https://www.youtube.com/watch?v=XXXXXXXXXXXXXXXXXXXX](https://www.youtube.com/watch?v=XXXXXXXXXXXXXXXXXXXX)
+[![Youtube](https://github.com/nfts2me/nautilus-nfts2me/assets/472079/d16f4257-6a63-422e-98f2-90a8777dfc58)](https://www.youtube.com/watch?v=QdZkx3Yqjs0 "Demo Video")
+[DEMO VIDEO: https://www.youtube.com/watch?v=QdZkx3Yqjs0](https://www.youtube.com/watch?v=QdZkx3Yqjs0)
 
 ## Nautilus Direct Links
 
