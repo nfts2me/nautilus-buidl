@@ -7,9 +7,6 @@ Our goal is to make the process of creating, deploying, and managing your NFT co
 
 **[NFTs2Me](https://nfts2me.com/)** is a user-friendly comprehensive platform to create, deploy and manage your NFT collection and community, **100% free** with advanced functionalities. It embraces the three big pillars of the NFT life cycle: creation, deployment, and administration of the contract and the community, empowering NFT creators.
 
-![nfts2me home](https://github.com/nfts2me/nautilus-nfts2me/assets/109629895/d2b401a3-b53d-48c9-b08a-bc3e6daec859)
-
-
 The **creation** pillar allows users to create their own NFTs artwork using a simple and user-friendly interface. Users can upload their own artwork or other digital assets or use our builtin generative art tool, and we'll guide them through the process of creating the metadata, defining its rarity, and uploading the collection to IPFS (a decentralized immutable file system) for free.
 
 The **deployment** pillar allows users to create and deploy the NFT contract on the blockchain, making them immutable, verified and accessible to the public. Our optimized system offers ultra low contract deployment fees while keeping advanced functionalities, like different minting types, minting the NFTs on any ERC-20 (like peggy BTC, USDT, DAI, ETH or any created ERC-20) or native coin (TZBC), Soulbound tokens, on chain affiliation... Furthermore, we offer the possibility to use our upgradeable contracts to benefit from new upcoming features. When deploying a collection you'll receive an NFT that represents its ownership.
